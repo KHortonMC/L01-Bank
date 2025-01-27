@@ -1,10 +1,8 @@
 package cs113.bank;
 
 import cs113.bank.account.Account;
-import cs113.bank.account.TestAccount;
 import cs113.bank.controllers.BankController;
 import cs113.bank.customer.Customer;
-import cs113.bank.customer.TestCustomer;
 import cs113.bank.transactions.Transaction;
 
 import java.util.ArrayList;
@@ -33,15 +31,15 @@ public class Bank {
     }
 
     private void testAccount() {
-        Customer c = new TestCustomer("Not A. Person", "123 Nowhere Drive", "555-555-5555", 30);
-        customers.add(c);
-
-        Account a = new TestAccount(c, 1.0);
-        accounts.add(a);
-
-        a.deposit(50.0);
-        a.addInterest(0.01);
-        a.withdraw(60.0);
+//        Customer c = new TestCustomer("Not A. Person", "123 Nowhere Drive", "555-555-5555", 30);
+//        customers.add(c);
+//
+//        Account a = new TestAccount(c, 1.0);
+//        accounts.add(a);
+//
+//        a.deposit(50.0);
+//        a.addInterest(0.01);
+//        a.withdraw(60.0);
     }
 
     public BankController getGUIController() { return GUIController; }
