@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="487.0" prefWidth="556.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs113.bank.controllers.BankController">
+   <children>
+      <Pane prefHeight="490.0" prefWidth="556.0">
+         <children>
+            <TabPane fx:id="tabPane" layoutY="71.0" prefHeight="415.0" prefWidth="556.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                  <Tab id="tab-balance" text="Balance">
+                     <content>
+                         <fx:include id="tab-balance" source="tab-balance.fxml" />
+                     </content>
+                  </Tab>
+                  <Tab id="tab-deposit" text="Deposit">
+                     <content>
+                         <fx:include id="tab-deposit" source="tab-deposit.fxml" />
+                     </content>
+                  </Tab>
+                  <Tab id="tab-withdrawal" text="Withdrawal">
+                     <content>
+                         <fx:include id="tab-withdrawal" source="tab-withdrawal.fxml" />
+                     </content>
+                  </Tab>
+                  <Tab id="tab-interest" text="Add Interest">
+                     <content>
+                        <fx:include id="tab-interest" source="tab-interest.fxml" />
+                     </content>
+                  </Tab>
+                <Tab id="tab-customer" text="+ Customer">
+                  <content>
+                      <fx:include id="tab-customer" source="tab-customer.fxml" />
+                  </content>
+                </Tab>
+                <Tab id="tab-account" text="+ Account">
+                  <content>
+                      <fx:include id="tab-account" source="tab-account.fxml" />
+                  </content>
+                </Tab>
+                  <Tab id="tab-lookup" text="Lookup Customer">
+                     <content>
+                         <fx:include id="tab-lookup" source="tab-lookup.fxml" />
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+            <Label layoutX="14.0" layoutY="1.0" prefHeight="61.0" prefWidth="254.0" text="Bank Name">
+               <font>
+                  <Font size="51.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="64.0" fitWidth="67.0" layoutX="492.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@banklogo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</VBox>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs113.bank.controllers.TabBalanceController">
+        <children>
+            <Label layoutX="57.0" layoutY="7.0" prefHeight="41.0" prefWidth="125.0" text="Account Number:" />
+            <ChoiceBox fx:id="accountList" layoutX="169.0" layoutY="14.0" prefHeight="27.0" prefWidth="222.0" />
+            <Button layoutX="405.0" layoutY="14.0" mnemonicParsing="false" onAction="#onLookupAccount" prefHeight="27.0" prefWidth="117.0" text="Lookup" />
+      <ScrollPane layoutX="57.0" layoutY="92.0" prefHeight="290.0" prefWidth="465.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="32.0" prefWidth="464.0">
+               <children>
+                  <VBox fx:id="transactionList" prefHeight="279.0" prefWidth="465.0">
+                     <children>
+                        <HBox fx:id="transactionDisplay" prefHeight="31.0" prefWidth="465.0">
+                           <children>
+                              <Label id="transactionDate" fx:id="transactionDate" prefHeight="27.0" prefWidth="238.0" text="[none]" />
+                              <Label id="transactionType" fx:id="transactionType" prefHeight="27.0" prefWidth="160.0" text="[none]" />
+                              <Label id="transactionAmount" fx:id="transactionAmount" prefHeight="27.0" prefWidth="74.0" text="[none]" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Label layoutX="57.0" layoutY="48.0" prefHeight="27.0" prefWidth="66.0" text="Customer" />
+      <Label fx:id="customerName" layoutX="138.0" layoutY="48.0" prefHeight="27.0" prefWidth="201.0" text="[none]" />
+      <Label layoutX="383.0" layoutY="48.0" prefHeight="27.0" prefWidth="66.0" text="Balance" />
+      <Label fx:id="customerBalance" layoutX="456.0" layoutY="48.0" prefHeight="27.0" prefWidth="66.0" text="[none]" />
+        </children>
+</AnchorPane>
