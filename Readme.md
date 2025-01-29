@@ -38,7 +38,9 @@ As a group, decide how you want to determine what kind of account is going to be
 
 If you need help on how to implement the UI elements, refer to TabNewCustomerController and tab-customer.fxml for reference.
 
-Part 5: Extend the abstract class Account. Individual work.
+NOTE: When changing tabs, the method activate() is called automatically for you. This will allow you to repopulate your lists.
+
+Part 4: Extend the abstract class Account. Individual work.
 
 Each member of the group must create a child class for the Account class.
 
@@ -72,7 +74,7 @@ You can manually create an account and perform transactions in Bank.testAccount(
 
 NOTE: Don't check Bank.java in to github or you'll have merge conflicts with your teammates who are also testing this way!
 
-Part 6: Implement deposit, withdrawal, and add interest tabs. Individual work.
+Part 5: Implement deposit, withdrawal, and add interest tabs. Individual work.
 
 Resuming our work in SceneBuilder, each team member must implement one of the three tabs: deposit, withdrawal, or addInterest.
 
@@ -84,7 +86,7 @@ Look at TabBalanceController and tab-balance.fxml for reference on how to find a
 
 Look at tabNewCustomerController for examples of how to get information from a TextField.
 
-Part 7: Bonus Task! Group work.
+Part 6: Bonus Task! Group work.
 
 For those of you who finish early, begin collaborating on how to complete the Lookup Customer tab.
 
@@ -92,6 +94,6 @@ This tab should find a customer record, then display all information about the c
 
 No hints on this one as it's a bonus challenge!
 
-Part 8: Bonus Task! Mixed work.
+Part 7: Bonus Task! Mixed work.
 
 Add error handling to the bank.
